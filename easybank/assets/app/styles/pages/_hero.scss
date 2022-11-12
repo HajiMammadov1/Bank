@@ -1,0 +1,14 @@
+.hero {
+    
+    &__image {
+        background-image: url('/easybank/assets/images/bg-intro-mobile.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 17.5rem;
+    }
+
+    &__text {
+        
+    }
+}
