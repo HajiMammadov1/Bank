@@ -23,13 +23,19 @@ body.noscroll {
   overflow: hidden;
 }
 
+h1, h2, h3 {
+  margin-top: 0;
+}
+
 a, a:visited, a:hover {
   text-decoration: none;
 }
 
 .container {
-  padding-left: 1.5rem;
+  padding-top: 2.25rem;
   padding-right: 1.5rem;
+  padding-bottom: 2.25rem;
+  padding-left: 1.5rem;
 }
 
 .flex {
@@ -57,6 +63,7 @@ a, a:visited, a:hover {
 }
 
 button, .button {
+  display: inline-block;
   padding: 0.875rem 2.1875rem;
   border-radius: 50px;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
@@ -64,7 +71,14 @@ button, .button {
   cursor: pointer;
   border: 0;
   color: white;
+  font-size: 0.875rem;
   font-weight: 400;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+button:hover, .button:hover {
+  opacity: 0.75;
 }
 
 @media (max-width: 63.9375em) {
@@ -195,17 +209,6 @@ button, .button {
   opacity: 1;
 }
 
-.header__cta {
-  font-size: 0.875rem;
-  color: white;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
-}
-
-.header__cta:hover {
-  opacity: 0.75;
-}
-
 .has-fade {
   visibility: hidden;
 }
@@ -298,5 +301,22 @@ button, .button {
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+.hero__text {
+  text-align: center;
+}
+
+.hero__text h1 {
+  font-weight: 300;
+  font-size: 2.32rem;
+  line-height: 1.15;
+  color: #2d314d;
+  margin-bottom: 1.5rem;
+}
+
+.hero__text p {
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
 }
 /*# sourceMappingURL=main.css.map */
