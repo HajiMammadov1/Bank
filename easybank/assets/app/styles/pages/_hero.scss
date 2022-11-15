@@ -17,6 +17,11 @@
         background-position: center center;
         min-height: 17.5rem;
 
+        @include breakpoint-up(medium) {
+            min-height: 25rem;
+            background-position: center 60%;
+        }
+
         @include breakpoint-up(large) {
             flex: 3;
             order: 2;
@@ -36,6 +41,10 @@
             background-repeat: no-repeat;
             background-position: center bottom;
 
+            @include breakpoint-up(medium) {
+                background-size: 52%;
+            }
+
             @include breakpoint-up(large) {
                 width: 120%;
                 height: 122%;
@@ -47,16 +56,15 @@
         }
 
         &:before {
-            content: "";
-            position: absolute;
-            background-image: url(/easybank/assets/images/bg-intro-desktop.svg);
-            width: 100%;
-            height: 100%;
-            background-size: 90%;
-            background-repeat: no-repeat;
-            background-position: center bottom;
 
             @include breakpoint-up(large) {
+                content: "";
+                position: absolute;
+                background-image: url(/easybank/assets/images/bg-intro-desktop.svg);
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center bottom;
                 width: 150%;
                 background-size: 122%;
                 background-position: 0% 83%;
