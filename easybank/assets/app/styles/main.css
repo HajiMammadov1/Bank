@@ -320,8 +320,12 @@ button:hover, .button:hover {
           animation: fade-out 200ms ease-in-out forwards;
 }
 
+.hero {
+  background-color: #fafafa;
+}
+
 @media (min-width: 64em) {
-  .hero {
+  .hero .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -349,12 +353,11 @@ button:hover, .button:hover {
         -ms-flex-order: 2;
             order: 2;
     min-height: 41rem;
-    background-image: url("/easybank/assets/images/bg-intro-desktop.svg");
-    background-position: left center;
+    background-image: none;
   }
 }
 
-.hero__image:before {
+.hero__image:after {
   content: "";
   position: absolute;
   background-image: url(/easybank/assets/images/image-mockups.png);
@@ -363,6 +366,35 @@ button:hover, .button:hover {
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+@media (min-width: 64em) {
+  .hero__image:after {
+    width: 120%;
+    height: 122%;
+    background-size: 94%;
+    background-position: center 150%;
+    left: 22%;
+  }
+}
+
+.hero__image:before {
+  content: "";
+  position: absolute;
+  background-image: url(/easybank/assets/images/bg-intro-desktop.svg);
+  width: 100%;
+  height: 100%;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+@media (min-width: 64em) {
+  .hero__image:before {
+    width: 150%;
+    background-size: 122%;
+    background-position: 0% 83%;
+  }
 }
 
 .hero__text {

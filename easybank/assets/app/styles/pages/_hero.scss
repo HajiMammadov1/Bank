@@ -1,8 +1,12 @@
 .hero {
 
-    @include breakpoint-up(large) {
-        display: flex;
-        align-items: center;
+    background-color: $veryLightGray;
+
+    .container {
+        @include breakpoint-up(large) {
+            display: flex;
+            align-items: center;
+        }
     }
     
     &__image {
@@ -17,11 +21,12 @@
             flex: 3;
             order: 2;
             min-height: 41rem;
-            background-image: url('/easybank/assets/images/bg-intro-desktop.svg');
-            background-position: left center;
+            background-image: none;
+            //background-image: url('/easybank/assets/images/bg-intro-desktop.svg');
+            //background-position: left center;
         }
 
-        &:before {
+        &:after {
             content: "";
             position: absolute;
             background-image: url(/easybank/assets/images/image-mockups.png);
@@ -30,6 +35,32 @@
             background-size: 90%;
             background-repeat: no-repeat;
             background-position: center bottom;
+
+            @include breakpoint-up(large) {
+                width: 120%;
+                height: 122%;
+                background-size: 94%;
+                background-position: center 150%;
+                left: 22%;
+            }
+
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            background-image: url(/easybank/assets/images/bg-intro-desktop.svg);
+            width: 100%;
+            height: 100%;
+            background-size: 90%;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+
+            @include breakpoint-up(large) {
+                width: 150%;
+                background-size: 122%;
+                background-position: 0% 83%;
+            }
         }
     }
 
