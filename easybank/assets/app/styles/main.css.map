@@ -13,7 +13,8 @@
         "components/_animations.scss",
         "pages/_index.scss",
         "pages/_hero.scss",
-        "pages/_feature.scss"
+        "pages/_feature.scss",
+        "pages/_article.scss"
     ],
     "names": [],
     "file": "main.css"
