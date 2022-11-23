@@ -42,18 +42,11 @@
 
     &__icon {
 
-        transition: all 200ms ease-in-out;
-
         margin-bottom: 1.875rem;
         margin-top: 1.875rem;
 
         @include breakpoint-up(large) {
-            margin-bottom: 2.75rem;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-            
+            margin-bottom: 2.75rem;  
         }
     }
 
@@ -64,20 +57,10 @@
         line-height: 1.15;
         color: $darkBlue;
         margin-bottom: 1rem;
-        transition: all 200ms ease-in-out;
 
         @include breakpoint-up(large) {
             font-size: 1.5rem;
             margin-bottom: 1.5rem;
-        }
-
-        @include breakpoint-up(large) {
-
-            &:hover {
-                transform: scale(1.1);
-                color: $darkBlue;
-            }
-            
         }
     }
 
